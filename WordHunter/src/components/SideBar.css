@@ -1,0 +1,291 @@
+.sidebar-container {
+    box-sizing: border-box;
+    height: 100vh;
+    flex-grow: 1;
+    padding:4px;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    flex-grow: 1;
+    background-color: rgb(220, 197, 163);
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid rgb(206, 174, 126);
+    display: flex;
+    flex-direction: column;
+    color: rgb(111, 83, 42);
+}
+
+.sidebar > h1 {
+    text-align: center;
+    background-color: rgb(255,229,180);
+    margin: 0;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid rgb(210,180,140);
+    flex: 0 0 auto; 
+}
+
+
+
+.control-box {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    flex: 0 0 auto;
+    gap: 5px;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 5px;
+    height: 10px;
+    background-color: rgb(255,229,180);
+    flex: 1 1 auto;
+    border: 3px solid rgb(210,180,140);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.points-box {
+    display: flex;
+    background-color: rgb(249, 236, 214);
+    border: 2px solid rgb(210,180,140);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(191, 147, 90);
+    flex: 0;
+}
+
+.score {
+    flex-grow: 1;
+}
+
+.timer {
+    text-align: right;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.timer.redflash {
+    background-color: rgb(245, 79, 79);
+    color: white;
+}
+
+.button {
+    box-sizing: border-box;
+    flex: 1 1 0;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255,229,180);
+    border: 3px solid rgb(210,180,140);
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 3px solid lightgrey;
+    background-color: white;
+    box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    transition: border 0.25s, background-color 0.25s, box-shadow 0.25s;
+}
+
+.button.stop {
+    border: 3px solid rgb(227, 37, 37);
+    background-color: rgb(246, 80, 80);
+    color: rgb(128, 2, 2);
+}
+
+.button.stop:hover {
+    border: 3px solid rgb(233, 7, 7);
+    background-color: rgb(249, 43, 43);
+    color: rgb(128, 2, 2);
+    box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    transition: border 0.25s, background-color 0.25s, box-shadow 0.25s;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.found-words {
+    flex: 1;
+    margin-bottom: 1px;
+    overflow: scroll;
+}
+
+.found-word {
+    display: flex;
+    flex: 1;
+    margin-top: 1px;
+    background-color: rgb(254, 249, 240);
+    border: 2px solid rgb(226, 205, 177);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10000;
+    transition: border 1s, background-color 1s;
+}
+
+h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.found-string {
+    flex-grow: 1;
+}
+
+.found-points {
+    flex-grow: 0;
+    text-align: right;
+    color: rgb(191, 147, 90);
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    height: 140px;
+    margin-top: 5px;
+    background-color: rgb(255,229,180);
+    border: 3px solid rgb(210,180,140);
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    gap: 5px;
+}
+
+.user-data h4 {
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb(255,229,180);
+    border: 2px solid rgb(210,180,140);
+    border-radius: 5px;
+    flex: 0 0 auto;
+}
+
+.input-fields {
+    display: flex;
+    gap: 5px;
+    flex: 0 0 auto;
+}
+
+.input-fields input {
+    background-color: rgb(249, 236, 214);
+    border: 2px solid rgb(212, 185, 150);
+    border-radius: 5px;
+    font-family: 'Oswald';
+    font-size: 20px;
+    outline: none;
+    width: 45%;
+    flex-grow: 1;
+    color: rgb(150, 128, 95);
+}
+
+::placeholder {
+    color: rgb(188, 175, 155);
+    opacity: 1;
+}
+
+.account-button-container {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.account-button {
+    box-sizing: border-box;
+    flex: 1 0 0;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 20px;
+    font-family: 'Oswald';
+    color: rgb(111, 83, 42);
+    text-align: center;
+    background-color: rgb(255,229,180);
+    border: 2px solid rgb(210,180,140);
+    cursor: pointer;
+}
+
+#sign-in:hover {
+    background-color: rgb(147, 208, 248); 
+    border: 2px solid rgb(0, 153, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    text-shadow:
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254);
+    transition: border 0.25s, background-color 0.25s, box-shadow 0.25s;
+}
+
+#register:hover {
+    background-color: rgb(119, 248, 136); 
+    border: 2px solid rgb(48, 218, 70);
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    text-shadow:
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254),
+        0 0 2px rgb(201, 233, 254);
+    transition: border 0.25s, background-color 0.25s, box-shadow 0.25s;
+}
+
+.stats {
+    flex: 1 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    gap: 5px;
+}
+
+.stats > div {
+    flex: 1 1 0;
+    border: 2px solid rgb(210,180,140);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.stats p {
+    margin: 0;
+    text-align: center;
+    border: 2px solid rgb(210,180,140);
+    background-color: rgb(249, 236, 214);
+    border-radius: 5px;
+}
+
+.stats h2 {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+#user-title {
+    background-color: rgb(249, 236, 214);
+
+}
